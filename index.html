@@ -18,7 +18,9 @@
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/style.css" />
     <title>Work Day Scheduler</title>
   </head>
 
@@ -30,108 +32,147 @@
     </header>
     <div class="container">
       <!-- Timeblocks go here and include: section for time, section for info, button for saving info-->
+
       <!--8am block-->
-      <div id="08amBlock" class="row">
+      <div id="08amBlock" class="row time-block " data-hour="8">
         <!--time-->
-        <div class="col_time" >
+        <div class="col-1  hour " >
           8am
         </div>
         <!--info-->
-        <textarea class="time-block" placeholder="Input schedule event here"></textarea>
+        <textarea class="col-10 description" placeholder="Input schedule event here"></textarea>
         <!--button for saving-->
-        <button class="saveBtn"></button>
+        <button class="col-1 btn saveBtn"><i class="fas fa-save"></i></button>
       </div>
+
       <!--9am block-->
-      <div id="09amBlock" class="row">
+      <div id="09amBlock" class="row time-block" data-hour="9">
         <!--time-->
-        <div class="col_time">
+        <div class="col-1  hour" >
           9am
         </div>
         <!--info-->
-        <textarea rows="4" cols="50"></textarea>
+        <textarea class="col-10 description" placeholder="Input schedule event here"></textarea>
+        <!--button for saving-->
+        <button class="col-1 btn saveBtn"><i class="fas fa-save"></i></button>
       </div>
+
       <!--10am block-->
-      <div id="10amBlock" class="row">
+      <div id="10amBlock" class="row time-block" data-hour="10">
         <!--time-->
-        <div class="col_time">
+        <div class="col-1  hour" >
           10am
         </div>
         <!--info-->
-        <textarea rows="4" cols="50"></textarea>
+        <!--col-10 is using bootstrap-->
+        <textarea class="col-10 description" placeholder="Input schedule event here"></textarea>
+        <!--button for saving-->
+        <button class="col-1 btn saveBtn"><i class="fas fa-save"></i></button>
       </div>
+
       <!--11am block-->
-      <div id="11amBlock" class="row">
+      <div id="11amBlock" class="row time-block" data-hour="11">
         <!--time-->
-        <div class="col_time">
+        <div class="col-1  hour" >
           11am
         </div>
         <!--info-->
-        <textarea rows="4" cols="50"></textarea>
+        <!--col-10 is using bootstrap-->
+        <textarea class="col-10 description" placeholder="Input schedule event here"></textarea>
+        <!--button for saving-->
+        <button class="col-1 btn saveBtn"><i class="fas fa-save"></i></button>
       </div>
+
       <!--12pm block-->
-      <div id="12pmBlock" class="row">
+      <div id="12pmBlock" class="row time-block" data-hour="12">
         <!--time-->
-        <div class="col_time">
+        <div class="col-1  hour" >
           12pm
         </div>
         <!--info-->
-        <textarea rows="4" cols="50"></textarea>
+        <!--col-10 is using bootstrap-->
+        <textarea class="col-10 description" placeholder="Input schedule event here"></textarea>
+        <!--button for saving-->
+        <button class="col-1 btn saveBtn"><i class="fas fa-save"></i></button>
       </div>
+
       <!--1pm block-->
-      <div id="1pmBlock" class="row">
+      <div id="1pmBlock" class="row time-block" data-hour="13">
         <!--time-->
-        <div class="col_time">
+        <div class="col-1  hour" >
           1pm
         </div>
         <!--info-->
-        <textarea rows="4" cols="50"></textarea>
+        <!--col-10 is using bootstrap-->
+        <textarea class="col-10 description" placeholder="Input schedule event here"></textarea>
+        <!--button for saving-->
+        <button class="col-1 btn saveBtn"><i class="fas fa-save"></i></button>
       </div>
+
       <!--2pm block-->
-      <div id="2pmBlock" class="row">
+      <div id="2pmBlock" class="row time-block" data-hour="14">
         <!--time-->
-        <div class="col_time">
+        <div class="col-1  hour" >
           2pm
         </div>
         <!--info-->
-        <textarea rows="4" cols="50"></textarea>
+        <!--col-10 is using bootstrap-->
+        <textarea class="col-10 description" placeholder="Input schedule event here"></textarea>
+        <!--button for saving-->
+        <button class="col-1 btn saveBtn"><i class="fas fa-save"></i></button>
       </div>
+
       <!--3pm block-->
-      <div id="3pmBlock" class="row">
+      <div id="3pmBlock" class="row time-block" data-hour="15">
         <!--time-->
-        <div class="col_time">
+        <div class="col-1  hour" >
           3pm
         </div>
         <!--info-->
-        <textarea rows="4" cols="50"></textarea>
+        <!--col-10 is using bootstrap-->
+        <textarea class="col-10 description" placeholder="Input schedule event here"></textarea>
+        <!--button for saving-->
+        <button class="col-1 btn saveBtn"><i class="fas fa-save"></i></button>
       </div>
+
       <!--4pm block-->
-      <div id="4pmBlock" class="row">
+      <div id="4pmBlock" class="row time-block" data-hour="16">
         <!--time-->
-        <div class="col_time">
+        <div class="col-1  hour" >
           4pm
         </div>
         <!--info-->
-        <textarea rows="4" cols="50"></textarea>
+        <!--col-10 is using bootstrap-->
+        <textarea class="col-10 description" placeholder="Input schedule event here"></textarea>
+        <!--button for saving-->
+        <button class="col-1 btn saveBtn"><i class="fas fa-save"></i></button>
       </div>
-      <!--5pm block-->
-      <div id="5pmBlock" class="row">
-        <!--time-->
-        <div class="col_time">
-          5pm
+
+        <!--5pm block-->
+        <div id="5pmBlock" class="row time-block" data-hour="17">
+          <!--time-->
+          <div class="col-1  hour" >
+            5pm
+          </div>
+          <!--info-->
+          <!--col-10 is using bootstrap-->
+          <textarea class="col-10 description" placeholder="Input schedule event here"></textarea>
+          <!--button for saving-->
+          <button class="col-1 btn saveBtn"><i class="fas fa-save"></i></button>
         </div>
-        <!--info-->
-        <textarea rows="4" cols="50"></textarea>
-      </div>
-      <!--6pm block-->
-      <div id="6pmBlock" class="row">
-        <!--time-->
-        <div class="col_time">
-          6pm
+
+         <!--6pm block-->
+         <div id="6pmBlock" class="row time-block" data-hour="18">
+          <!--time-->
+          <div class="col-1  hour" >
+            6pm
+          </div>
+          <!--info-->
+          <!--col-10 is using bootstrap-->
+          <textarea class="col-10 description" placeholder="Input schedule event here"></textarea>
+          <!--button for saving-->
+          <button class="col-1 btn saveBtn"><i class="fas fa-save"></i></button>
         </div>
-        <!--info-->
-        <textarea rows="4" cols="50"></textarea>
-      </div>
-      
 
     </div>
 
