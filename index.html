@@ -32,16 +32,17 @@
     </header>
     <div class="container">
       <!-- Timeblocks go here and include: section for time, section for info, button for saving info-->
+      <!--bootstrap has 12 columns of space-->
 
       <!--8am block-->
       <div id="08amBlock" class="row time-block " data-hour="8">
-        <!--time-->
+        <!--time, 1 column of space-->
         <div class="col-1  hour " >
           8am
         </div>
-        <!--info-->
+        <!--info, 10 columns of space-->
         <textarea class="col-10 description" placeholder="Input schedule event here"></textarea>
-        <!--button for saving-->
+        <!--button for saving, 1 column of space-->
         <button class="col-1 btn saveBtn"><i class="fas fa-save"></i></button>
       </div>
 
@@ -175,8 +176,9 @@
         </div>
 
     </div>
-
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>
