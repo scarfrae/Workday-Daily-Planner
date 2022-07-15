@@ -3,7 +3,7 @@
 //get current hour
 var currentHour = moment().format("HH");
 //all of timeblocks)
-for(var i = 8; i < 19; i++){
+for(var i = 8; i < 21; i++){
     //using jquery goes to dom (html and gets data-hour matching 8)
     //compares current moment to the hour that function is looking at
     if(currentHour > i){
@@ -25,19 +25,17 @@ console.log(currentHour);
 
 //add click event listeners onto save button so text stuff goes in local storage
 //create function since adding event listener to every i element
-const btnElement = document.getElementsByClassName("btn");
-btnElement.addEventListener("click", SaveText);
-function SaveText() {
-    console.log("hello");
-}
+
+
+
 //event listener:
+const button = document.getElementsByClassName('btn');
+button.addEventListener('click', clickButton);
+function clickButton(event){
+    console.log('save has been initiated');
 
-// function clickButton(event){
-//     console.log('save has been initiated');
+}
 
-// }
-// const button = document.getElementsByClassName('btn');
-// button.addEventListener('click', clickButton);
 
 //attach to every save button an event listener that pulls text data from from neighbor of button and save it into local storage
 //save data as object 
