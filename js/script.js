@@ -1,6 +1,4 @@
-//if statemets for past, present, future
-//compare momentjs to hour and add one of three
-//get current hour
+
 var currentHour = moment().format("HH");
 //all of timeblocks)
 for (var i = 8; i < 21; i++) {
@@ -14,10 +12,6 @@ for (var i = 8; i < 21; i++) {
     $(`[data-hour=${i}]`).addClass("future");
   }
 }
-console.log(currentHour);
-
-//add click event listeners onto save button so text stuff goes in local storage
-//create function since adding event listener to every i element
 
 //assign event listener:
 const button = $(".saveBtn");
@@ -25,17 +19,13 @@ const button = $(".saveBtn");
 button.on("click", function (event) {
   //prevent refreshing page !! necessary whenever working with everything
   event.preventDefault();
-  // console.log("Save Btn");
-  //identify information in each input
 
   //info of click info
   //select sibling with class description and getting its value
   var textInfo = $(this).siblings(".description").val();
-  console.log(textInfo);
   //get id of particular hour
   //getting parent of button child's id attribute
   var hourRow = $(this).parent().attr("id");
-  console.log(hourRow);
   //save into local storage
   //either read text that's already there or make array
   //can't manipualate local storage directly so need variable
@@ -66,6 +56,4 @@ $(".description").each(function (index) {
   }
 });
 
-//attach to every save button an event listener that pulls text data from from neighbor of button and save it into local storage
-//save data as object
-//when loading page pull from local storage and make sure each text box has right text
+
